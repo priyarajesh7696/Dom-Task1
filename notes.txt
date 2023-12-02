@@ -1,0 +1,18 @@
+const mainDiv = document.createElement("div");
+// const output = document.createElement("input");
+// output.setAttribute=("id","result");
+// const one = document.createElement("button").innerText="1";
+// const two = document.createElement("button").innerText="2";
+// const three = document.createElement("button").innerText="3";
+// const four = document.createElement("button").innerText="4";
+// const five = document.createElement("button").innerText="5";
+// const six = document.createElement("button").innerText="6";
+// const seven = document.createElement("button").innerText="7";
+// const eight = document.createElement("button");
+// const nine = document.createElement("button");
+// const add = document.createElement("button");
+// const sub = document.createElement("button");
+// const mul = document.createElement("button");
+// const div = document.createElement("button");
+// const equal = document.createElement("button");
+// mainDiv.appendChild(output,one,two,three);
