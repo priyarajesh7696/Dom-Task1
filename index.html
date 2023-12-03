@@ -16,16 +16,17 @@
     <div class="container">
     <h1 id="title" style="text-align: center;">Dom Task-1 </h1>
     <p id="description" style="color:blue; text-align: center; font-size: large;"><strong>Dom Manuplation with Form and Table</strong></p>
-      <div class="form" style="border: 2px solid gray;background-color:burlywood;border-radius: 5px;">
-        <form id="form" style="padding: 10px;">
-          <fieldset>
+      <div class="form" style="display:flex; flex-direction: row;align-content: space-between; justify-content:space-around; border: 2px solid gray;background-color:burlywood;border-radius: 5px;">
+        <div class="form1">
+        <form id="form" onsubmit="add()" style="padding: 10px;" >
+          
           <label>FirstName:</lable><input type="text" id="first-name" name="fname" placeholder="Enter the first name" required/><br>
           <label>LastName:</lable> <input type="text" id="last-name" name="lname" placeholder="Enter The Last Name" required /> <br/>
           <label>Address:</lable> <textarea type="text" id="address" name="address" placeholder="Address"></textarea><br/>
           <label>Pincode:</lable> <input type="text" id="pincode" name="pincode" placeholder="Pincode" required/><br/>
-          <label>Gender:</label>     <input type="radio" id="male" name="gender" value="male" /> 
+          <label>Gender:</label><input type="radio" id="male" name="gender" value="male" checked required /> 
           <label for="male">Male</label> 
-                               <input type="radio" id="female" name="gender"value="female" /> 
+          <input type="radio" id="female" name="gender"value="female"checked required /> 
             <label for="female"> Female</label>  <br/>
           <label>Food:</label> 
            <select>
@@ -38,14 +39,14 @@
           <label>State:</lable> <input type="text" id="state" name="state" placeholder="State Name" /><br/>
           <label>Country:</lable> <input type="text" id="country" name="country" placeholder="Country Name" /><br/>
           
-          <button type="submit" class="btn btn-primary" id="submit" onclick="add()" />submit</button>
-        </fieldset>
+          <button type="submit" class="btn btn-primary" id="submit" onclick="add()"  />submit</button>
+        
         </form>
         
       </div>
       
 
-      <div class="table" style="border: 2px solid gray">
+      <div class="table" style="margin-left: 300px;height: 580px; border: 2px solid gray">
         <table class="table">
             <thead id="head" class="heading">
               <th  scope="col">First name</th>
@@ -57,10 +58,11 @@
               <th scope="col">state</th>
               <th scope="col">Country</th>
             </thead>
-            <tbody>
-            <tr id="data"></tr>
+            <tbody id="tbody">
+            
           </tbody>
         </table>
+      </div>
       </div>
   </div>
     <script src="./script.js"></script>
